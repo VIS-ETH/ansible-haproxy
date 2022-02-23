@@ -50,7 +50,7 @@ defaults
 	timeout server-fin 1s
 	#option httpclose			# uncomment if we can't keep up with keep alive
 	#option nolinger			# uncomment if we run into problems similar to a nkiller2 attack
-	option abortonclose			# don't server aborted requests
+	option abortonclose			# don't serve aborted requests
 	option forwardfor			# sets client's IP in X-Forwarded-For
 	retries 2
 	errorfile 400 /etc/haproxy/errors/400.http
