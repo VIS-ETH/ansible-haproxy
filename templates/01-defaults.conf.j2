@@ -36,7 +36,7 @@ global
   ssl-dh-param-file /etc/haproxy/dh-params.txt
   {% endif %}
 
-	hard-stop-after 90s
+	hard-stop-after 4h
 
 {% if haproxy_ssl_dhparams_pem is defined %}
 	tune.ssl.default-dh-param 2048
